@@ -60,6 +60,7 @@ epochs=30: Sets the number of training epochs (iterations over the dataset) to 3
 imgsz=640: Defines the image size (640x640 pixels) for training and inference.
 
 Step 6: This command trains the YOLO model on a custom weapon detection dataset for 30 epochs:
+Note: Open data.yaml, change the file path for test, val, and train
 
     !yolo task=detect mode=train model=yolov5nu.pt data="/content/Weapons_dataset.v2i.yolov5pytorch/data.yaml" epochs=30 imgsz=640
 
